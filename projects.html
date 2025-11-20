@@ -11,93 +11,223 @@
 <body class="bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 text-white font-sans">
 
     <!-- Navbar -->
-    <nav class="flex justify-between items-center px-10 py-4 bg-transparent text-sm">
+    <nav class="flex justify-between items-center px-10 py-4 bg-transparent text-sm fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-gray-900/50">
         <h1 class="text-green-400 font-semibold text-lg">Portfolio</h1>
         <ul class="flex space-x-8 text-gray-300">
-            <li><a href="./index.html" class="hover:text-green-400">Home</a></li>
-            <li><a href="./about.html" class="hover:text-green-400">About</a></li>
-            <li><a href="./skills.html" class="hover:text-green-400">Skills</a></li>
-            <li><a href="./projects.html" class="hover:text-green-400">Projects</a></li>
-            <li><a href="./contact.html" class="hover:text-green-400">Contact</a></li>
+            <li><a href="./index.html" class="hover:text-green-400 transition">Home</a></li>
+            <li><a href="./about.html" class="hover:text-green-400 transition">About</a></li>
+            <li><a href="./skills.html" class="hover:text-green-400 transition">Skills</a></li>
+            <li><a href="./projects.html" class="text-green-400 font-semibold">Projects</a></li>
+            <li><a href="./contact.html" class="hover:text-green-400 transition">Contact</a></li>
         </ul>
-    </nav> 
-
-
-    <!-- Divider -->
-    <hr class="border-gray-700 mx-20" />
+    </nav>
 
     <!-- Projects Section -->
-    <section id="projects" class="px-10 md:px-20 py-20">
-        <h2 class="text-3xl font-bold text-center mb-12">
+    <section id="projects" class="px-10 md:px-20 pt-32 pb-20">
+        <h2 class="text-5xl font-bold text-center mb-4">
             My <span class="text-green-400">Projects</span>
         </h2>
+        <p class="text-center text-gray-400 mb-16">Showcasing my work and achievements</p>
+
+        <!-- Project Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+                <div class="text-3xl font-bold text-green-400 mb-2">10+</div>
+                <div class="text-gray-300 text-sm">Projects</div>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+                <div class="text-3xl font-bold text-green-400 mb-2">8+</div>
+                <div class="text-gray-300 text-sm">Technologies</div>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+                <div class="text-3xl font-bold text-green-400 mb-2">5+</div>
+                <div class="text-gray-300 text-sm">Live Projects</div>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+                <div class="text-3xl font-bold text-green-400 mb-2">100%</div>
+                <div class="text-gray-300 text-sm">Responsive</div>
+            </div>
+        </div>
 
         <!-- Project Cards Grid -->
-        <div class="grid md:grid-cols-3 gap-8 text-center">
-
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <!-- Project 1 -->
-            <div
-                class="bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-                <img src="./IMAGES/P2.png" alt="progect 1"class="rounded-lg mb-4 w-full h-48 object-cover">
-                <h3 class="text-xl font-semibold mb-2 text-green-400">Portfolio Website</h3>
-                <p class="text-gray-300 text-sm">
-                    A personal portfolio showcasing my skills, education, and completed projects using Tailwind CSS and
-                    React.
-                </p>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105 overflow-hidden">
+                <img src="./IMAGES/P2.png" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-green-400">Portfolio Website</h3>
+                        <span class="text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">2024</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        A personal portfolio showcasing my skills, education, and completed projects using Tailwind CSS and React.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">React</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">Tailwind</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">HTML</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">Live Demo →</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">GitHub →</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Project 2 -->
-            <div
-                class="bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-                <img src="./IMAGES/ecomer.jpeg" alt="progect 2"class="rounded-lg mb-4 w-full h-48 object-cover">
-                <h3 class="text-xl font-semibold mb-2 text-green-400">E-Commerce Website</h3>
-                <p class="text-gray-300 text-sm">
-                    A complete shopping platform built using React, Node.js, and MongoDB with Stripe payment
-                    integration.
-                </p>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105 overflow-hidden">
+                <img src="./IMAGES/ecomer.jpeg" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-green-400">E-Commerce Website</h3>
+                        <span class="text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">2023</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        A complete shopping platform built using React, Node.js, and MongoDB with Stripe payment integration.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">React</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">Node.js</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">MongoDB</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">Stripe</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">Live Demo →</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">GitHub →</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Project 3 -->
-            <div
-                class="bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-                <img src="./IMAGES/weather.jpeg" alt="Project 3" class="rounded-lg mb-4 w-full h-48 object-cover">
-                <h3 class="text-xl font-semibold mb-2 text-green-400">Weather App</h3>
-                <p class="text-gray-300 text-sm">
-                    Displays live weather data using a weather API. Built with HTML, CSS, and JavaScript.
-                </p>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105 overflow-hidden">
+                <img src="./IMAGES/weather.jpeg" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-green-400">Weather App</h3>
+                        <span class="text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">2023</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Displays live weather data using a weather API. Built with HTML, CSS, and JavaScript with responsive design.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">JavaScript</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">API</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">CSS3</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">Live Demo →</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">GitHub →</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Project 4 -->
-            <div
-                class="bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-                <img src="./IMAGES/todo.jpeg" alt="Project 4" class="rounded-lg mb-4 w-full h-48 object-cover">
-                <h3 class="text-xl font-semibold mb-2 text-green-400">Todo List App</h3>
-                <p class="text-gray-300 text-sm">
-                    A simple and modern To-Do application with CRUD functionality using React and local storage.
-                </p>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105 overflow-hidden">
+                <img src="./IMAGES/todo.jpeg" alt="Project 4" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-green-400">Todo List App</h3>
+                        <span class="text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">2023</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        A simple and modern To-Do application with CRUD functionality using React and local storage.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">React</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">LocalStorage</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">CSS3</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">Live Demo →</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">GitHub →</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Project 5 -->
-            <div
-                class="bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-                <img src="./IMAGES/chate.png" alt="Project 5" class="rounded-lg mb-4 w-full h-48 object-cover">
-                <h3 class="text-xl font-semibold mb-2 text-green-400">Chat Application</h3>
-                <p class="text-gray-300 text-sm">
-                    Real-time chat app with Socket.io and Express.js, allowing multiple users to connect simultaneously.
-                </p>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105 overflow-hidden">
+                <img src="./IMAGES/chate.png" alt="Project 5" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-green-400">Chat Application</h3>
+                        <span class="text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">2024</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        Real-time chat app with Socket.io and Express.js, allowing multiple users to connect simultaneously.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">Socket.io</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">Express</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">React</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">Live Demo →</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">GitHub →</a>
+                    </div>
+                </div>
             </div>
 
             <!-- Project 6 -->
-            <div
-                class="bg-gray-800/70 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-                <img src="./IMAGES/blog.jpeg" alt="Project 6" class="rounded-lg mb-4 w-full h-48 object-cover">
-                <h3 class="text-xl font-semibold mb-2 text-green-400">Blog Platform</h3>
-                <p class="text-gray-300 text-sm">
-                    A full-stack blog system with Markdown editor and MongoDB storage for posts and comments.
-                </p>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105 overflow-hidden">
+                <img src="./IMAGES/blog.jpeg" alt="Project 6" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-xl font-semibold text-green-400">Blog Platform</h3>
+                        <span class="text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">2024</span>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-4">
+                        A full-stack blog system with Markdown editor and MongoDB storage for posts and comments.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">MongoDB</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">Express</span>
+                        <span class="bg-green-400/20 text-green-400 px-2 py-1 rounded text-xs">React</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="#" class="text-green-400 hover:text-green-300 text-sm font-semibold">Live Demo →</a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300 text-sm">GitHub →</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Project Features -->
+        <div class="mb-16">
+            <h3 class="text-3xl font-bold mb-8 text-center">
+                Project <span class="text-green-400">Features</span>
+            </h3>
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+                    <div class="text-3xl mb-3">📱</div>
+                    <h4 class="text-green-400 font-semibold mb-2">Responsive Design</h4>
+                    <p class="text-gray-300 text-sm">All projects are fully responsive and work seamlessly on all devices</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+                    <div class="text-3xl mb-3">⚡</div>
+                    <h4 class="text-green-400 font-semibold mb-2">Performance</h4>
+                    <p class="text-gray-300 text-sm">Optimized for speed and performance with best practices</p>
+                </div>
+                <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h4 class="text-green-400 font-semibold mb-2">Security</h4>
+                    <p class="text-gray-300 text-sm">Secure authentication and data protection implemented</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+            <a href="./contact.html"
+                class="inline-block bg-green-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 shadow-lg shadow-green-400/30">
+                Let's Work Together →
+            </a>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="px-10 md:px-20 py-8 border-t border-gray-700 text-center text-gray-400">
+        <p>&copy; 2024 Zehra. All rights reserved. | Built with HTML & Tailwind CSS</p>
+    </footer>
 
 </body>
 

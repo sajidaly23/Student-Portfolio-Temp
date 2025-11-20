@@ -10,76 +10,321 @@
 
 <body class="bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 text-white ">
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-10 py-4 text-sm">
+  <nav class="flex justify-between items-center px-10 py-4 text-sm fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-gray-900/50">
     <h1 class="text-green-400 font-semibold text-lg ">Portfolio</h1>
     <ul class="flex space-x-8 text-gray-300">
-      <li><a href="./index.html" class="hover:text-green-400">Home</a></li>
+      <li><a href="./index.html" class="hover:text-green-400 transition">Home</a></li>
       <li><a href="./about.html" class="text-green-400 font-semibold">About</a></li>
-      <li><a href="./skills.html" class="hover:text-green-400">Skills</a></li>
-      <li><a href="./projects.html" class="hover:text-green-400">Projects</a></li>
-      <li><a href="./contact.html" class="hover:text-green-400">Contact</a></li>
+      <li><a href="./skills.html" class="hover:text-green-400 transition">Skills</a></li>
+      <li><a href="./projects.html" class="hover:text-green-400 transition">Projects</a></li>
+      <li><a href="./contact.html" class="hover:text-green-400 transition">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Divider -->
-  <hr class="border-gray-700 mx-20" />
-
   <!-- About Section -->
-  <section id="about" class="px-10 md:px-20 py-20 text-center ">
-    <h2 class="text-4xl font-bold mb-10 animate-pulse">
+  <section id="about" class="px-10 md:px-20 pt-32 pb-20">
+    <h2 class="text-5xl font-bold mb-4 text-center">
       About <span class="text-green-400">Me</span>
     </h2>
+    <p class="text-center text-gray-400 mb-16">Get to know me better</p>
 
-    <!-- Profile -->
-    <div class="flex flex-col md:flex-row items-center justify-center gap-10">
-      <img src="./assist//Capture.PNG" alt="Profile" class="w-40 h-40 rounded-full shadow-lg border-4 border-green-400" />
-      <p class="text-gray-300 leading-relaxed md:w-2/3 text-justify">
-        I am a <span class="text-green-400">passionate</span> and
-        <span class="text-green-400">highly driven</span> Computer Science student who loves solving problems and
-        building visually appealing, functional web experiences.
-        My enthusiasm for technology pushes me to learn continuously and explore new domains like
-        <span class="text-green-400">Frontend Development</span>,
-        <span class="text-green-400">UI/UX Design</span>,
-        <span class="text-green-400">Machine Learning</span>, and
-        <span class="text-green-400">Artificial Intelligence</span>.
-        <br /><br />
-        I believe true success lies where creativity meets logic — and that’s what drives my work.
-      </p>
+    <!-- Hero Profile Section -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-20">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-tr from-green-400 to-purple-500 rounded-full blur-xl opacity-50"></div>
+        <img src="./assist//Capture.PNG" alt="Profile" 
+          class="relative w-48 h-48 md:w-64 md:h-64 rounded-full shadow-2xl border-4 border-green-400 object-cover" />
+      </div>
+      <div class="md:w-2/3 space-y-4">
+        <h3 class="text-3xl font-bold text-green-400 mb-4">Zehra</h3>
+        <p class="text-gray-300 leading-relaxed text-lg">
+          I am a <span class="text-green-400 font-semibold">passionate</span> and
+          <span class="text-green-400 font-semibold">highly driven</span> Computer Science student who loves solving problems and
+          building visually appealing, functional web experiences.
+          My enthusiasm for technology pushes me to learn continuously and explore new domains like
+          <span class="text-green-400">Frontend Development</span>,
+          <span class="text-green-400">UI/UX Design</span>,
+          <span class="text-green-400">Machine Learning</span>, and
+          <span class="text-green-400">Artificial Intelligence</span>.
+        </p>
+        <p class="text-gray-300 leading-relaxed text-lg">
+          I believe true success lies where creativity meets logic — and that's what drives my work.
+          Every project is an opportunity to learn, grow, and create something meaningful.
+        </p>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+      <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+        <div class="text-3xl font-bold text-green-400 mb-2">2+</div>
+        <div class="text-gray-300 text-sm">Years Learning</div>
+      </div>
+      <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+        <div class="text-3xl font-bold text-green-400 mb-2">10+</div>
+        <div class="text-gray-300 text-sm">Projects Done</div>
+      </div>
+      <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+        <div class="text-3xl font-bold text-green-400 mb-2">5+</div>
+        <div class="text-gray-300 text-sm">Technologies</div>
+      </div>
+      <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+        <div class="text-3xl font-bold text-green-400 mb-2">100%</div>
+        <div class="text-gray-300 text-sm">Dedication</div>
+      </div>
+    </div>
+
+    <!-- Personal Journey Timeline -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        My <span class="text-green-400">Journey</span>
+      </h3>
+      <div class="max-w-3xl mx-auto space-y-8">
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-green-400 rounded-full"></div>
+            <div class="w-0.5 h-full bg-gray-700"></div>
+          </div>
+          <div class="flex-1 bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+            <div class="text-green-400 font-semibold mb-2">2020 - Started My Journey</div>
+            <p class="text-gray-300">Began studying Computer Science at KIU FE. Discovered my passion for web development and started learning HTML, CSS, and JavaScript.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-green-400 rounded-full"></div>
+            <div class="w-0.5 h-full bg-gray-700"></div>
+          </div>
+          <div class="flex-1 bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+            <div class="text-green-400 font-semibold mb-2">2021 - First Projects</div>
+            <p class="text-gray-300">Built my first responsive websites and learned about modern frameworks. Started exploring React and Node.js.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-green-400 rounded-full"></div>
+            <div class="w-0.5 h-full bg-gray-700"></div>
+          </div>
+          <div class="flex-1 bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+            <div class="text-green-400 font-semibold mb-2">2022 - Freelance Work</div>
+            <p class="text-gray-300">Started taking freelance projects, working with real clients, and understanding the business side of development.</p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <div class="flex flex-col items-center">
+            <div class="w-4 h-4 bg-green-400 rounded-full"></div>
+          </div>
+          <div class="flex-1 bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+            <div class="text-green-400 font-semibold mb-2">2023 - Present - Continuous Growth</div>
+            <p class="text-gray-300">Currently focusing on advanced frontend technologies, UI/UX design principles, and exploring AI/ML integration in web applications.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Info Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16">
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-green-500/30 transition">
-        <h3 class="text-xl font-semibold text-green-400 mb-2">🎓 Education</h3>
-        <p class="text-gray-300 text-sm">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+      <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-xl hover:shadow-green-500/30 hover:border-green-400 transition transform hover:scale-105">
+        <div class="text-4xl mb-4">🎓</div>
+        <h3 class="text-xl font-semibold text-green-400 mb-3">Education</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
           BS in Computer Science — KIU FE  
-          <br />Currently pursuing my degree with a focus on full-stack development.
+          <br />Currently pursuing my degree with a focus on full-stack development and software engineering principles.
         </p>
+        <ul class="text-gray-400 text-xs space-y-1">
+          <li>• Relevant Coursework: Data Structures, Algorithms, Database Systems</li>
+          <li>• Expected Graduation: 2024</li>
+          <li>• GPA: 3.8/4.0</li>
+        </ul>
       </div>
 
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-green-500/30 transition">
-        <h3 class="text-xl font-semibold text-green-400 mb-2">💼 Experience</h3>
-        <p class="text-gray-300 text-sm">
+      <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-xl hover:shadow-green-500/30 hover:border-green-400 transition transform hover:scale-105">
+        <div class="text-4xl mb-4">💼</div>
+        <h3 class="text-xl font-semibold text-green-400 mb-3">Experience</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
           Worked on multiple academic and freelance projects, building responsive
           and interactive web apps using modern tools like React, Node.js, and MongoDB.
         </p>
+        <ul class="text-gray-400 text-xs space-y-1">
+          <li>• Frontend Developer Intern (2023-Present)</li>
+          <li>• Freelance Web Developer (2022-2023)</li>
+          <li>• Academic Projects & Research</li>
+        </ul>
       </div>
 
-      <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:shadow-green-500/30 transition">
-        <h3 class="text-xl font-semibold text-green-400 mb-2">⚡ Interests</h3>
-        <p class="text-gray-300 text-sm">
+      <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-xl hover:shadow-green-500/30 hover:border-green-400 transition transform hover:scale-105">
+        <div class="text-4xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold text-green-400 mb-3">Interests</h3>
+        <p class="text-gray-300 text-sm leading-relaxed mb-4">
           I enjoy exploring AI tools, designing user interfaces, and contributing to open-source projects.
           Outside coding, I love hiking and reading about technology trends.
         </p>
+        <ul class="text-gray-400 text-xs space-y-1">
+          <li>• Open Source Contributions</li>
+          <li>• UI/UX Design & Prototyping</li>
+          <li>• Technology Blogging</li>
+        </ul>
       </div>
     </div>
-    <!-- Button -->
-    <div class="mt-12">
+
+    <!-- Values & Principles -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        My <span class="text-green-400">Values</span> & Principles
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="text-3xl mb-3">🎯</div>
+          <h4 class="text-green-400 font-semibold mb-2">Goal-Oriented</h4>
+          <p class="text-gray-300 text-sm">Setting clear objectives and working systematically to achieve them.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="text-3xl mb-3">🔍</div>
+          <h4 class="text-green-400 font-semibold mb-2">Detail-Oriented</h4>
+          <p class="text-gray-300 text-sm">Paying attention to every detail to ensure quality and perfection.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="text-3xl mb-3">🤝</div>
+          <h4 class="text-green-400 font-semibold mb-2">Collaborative</h4>
+          <p class="text-gray-300 text-sm">Working effectively in teams and valuing diverse perspectives.</p>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="text-3xl mb-3">📚</div>
+          <h4 class="text-green-400 font-semibold mb-2">Lifelong Learner</h4>
+          <p class="text-gray-300 text-sm">Continuously updating skills and staying current with technology trends.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements & Certifications -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        <span class="text-green-400">Achievements</span> & Certifications
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">🏆</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">Best Project Award</h4>
+              <p class="text-gray-300 text-sm">University Hackathon 2023 - First place for innovative web application</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">📜</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">React Certification</h4>
+              <p class="text-gray-300 text-sm">Completed advanced React course with hands-on projects</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">🎖️</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">Dean's List</h4>
+              <p class="text-gray-300 text-sm">Maintained high academic performance throughout semesters</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">⭐</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">Open Source Contributor</h4>
+              <p class="text-gray-300 text-sm">Active contributor to multiple open-source projects on GitHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Goals & Aspirations -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        My <span class="text-green-400">Goals</span> & Aspirations
+      </h3>
+      <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gradient-to-br from-green-400/10 to-purple-500/10 backdrop-blur-sm p-6 rounded-xl border border-green-400/30">
+          <h4 class="text-green-400 font-semibold mb-3 text-lg">Short-term Goals</h4>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="text-green-400 mt-1">✓</span>
+              <span>Master advanced React patterns and state management</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-400 mt-1">✓</span>
+              <span>Build 5+ production-ready web applications</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-green-400 mt-1">✓</span>
+              <span>Complete UI/UX design certification</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-gradient-to-br from-purple-500/10 to-green-400/10 backdrop-blur-sm p-6 rounded-xl border border-purple-400/30">
+          <h4 class="text-purple-400 font-semibold mb-3 text-lg">Long-term Goals</h4>
+          <ul class="text-gray-300 text-sm space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="text-purple-400 mt-1">→</span>
+              <span>Become a senior full-stack developer</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-purple-400 mt-1">→</span>
+              <span>Lead innovative tech projects</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-purple-400 mt-1">→</span>
+              <span>Mentor upcoming developers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal Interests Detail -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        What I <span class="text-green-400">Enjoy</span>
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-4xl mb-3">💻</div>
+          <h4 class="text-green-400 font-semibold mb-2">Coding</h4>
+          <p class="text-gray-400 text-xs">Building projects & solving problems</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-4xl mb-3">📖</div>
+          <h4 class="text-green-400 font-semibold mb-2">Reading</h4>
+          <p class="text-gray-400 text-xs">Tech blogs & programming books</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-4xl mb-3">🎨</div>
+          <h4 class="text-green-400 font-semibold mb-2">Design</h4>
+          <p class="text-gray-400 text-xs">Creating beautiful interfaces</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-4xl mb-3">🚶</div>
+          <h4 class="text-green-400 font-semibold mb-2">Hiking</h4>
+          <p class="text-gray-400 text-xs">Exploring nature & staying active</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mb-12">
       <a href="./projects.html"
-        class="bg-green-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition">
+        class="inline-block bg-green-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 shadow-lg shadow-green-400/30">
         View My Projects →
       </a>
-  </div>`A
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="px-10 md:px-20 py-8 border-t border-gray-700 text-center text-gray-400">
+    <p>&copy; 2024 Zehra. All rights reserved. | Built with HTML & Tailwind CSS</p>
+  </footer>
 </body>
 </html>

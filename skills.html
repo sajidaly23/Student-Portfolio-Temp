@@ -10,84 +10,279 @@
 <body class="bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900 text-white font-sans">
 
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-10 py-4 bg-transparent text-sm">
+  <nav class="flex justify-between items-center px-10 py-4 bg-transparent text-sm fixed w-full top-0 left-0 z-50 backdrop-blur-sm bg-gray-900/50">
     <h1 class="text-green-400 font-semibold text-lg">Portfolio</h1>
     <ul class="flex space-x-8 text-gray-300">
-      <li><a href="./index.html" class="hover:text-green-400">Home</a></li>
-      <li><a href="./about.html" class="hover:text-green-400">About</a></li>
-      <li><a href="./skills.html" class="hover:text-green-400">Skills</a></li>
-      <li><a href="./projects.html" class="hover:text-green-400">Projects</a></li>
-      <li><a href="./contact.html" class="hover:text-green-400">Contact</a></li>
+      <li><a href="./index.html" class="hover:text-green-400 transition">Home</a></li>
+      <li><a href="./about.html" class="hover:text-green-400 transition">About</a></li>
+      <li><a href="./skills.html" class="text-green-400 font-semibold">Skills</a></li>
+      <li><a href="./projects.html" class="hover:text-green-400 transition">Projects</a></li>
+      <li><a href="./contact.html" class="hover:text-green-400 transition">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Divider -->
-  <hr class="border-gray-700 mx-20" />
-
   <!-- Skills Section -->
-  <section id="skills" class="px-10 md:px-20 py-20">
-    <h2 class="text-3xl font-bold text-center mb-12">
+  <section id="skills" class="px-10 md:px-20 pt-32 pb-20">
+    <h2 class="text-5xl font-bold text-center mb-4">
       My <span class="text-green-400">Skills</span>
     </h2>
+    <p class="text-center text-gray-400 mb-16">Technologies and tools I work with</p>
 
-    <!-- Skill Cards -->
-    <div class="grid md:grid-cols-3 gap-8 text-center">
-
-      <!-- Card 1 -->
-      <div class="bg-gray-800/70 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-        <div class="text-green-400 text-3xl mb-4">💻</div>
-        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-        <p class="text-gray-300 text-sm">
-          Proficient in HTML, CSS, JavaScript, and React. I build clean, responsive, and interactive websites that deliver great user experiences.
-        </p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-gray-800/70 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-        <div class="text-green-400 text-3xl mb-4">🎨</div>
-        <h3 class="text-xl font-semibold mb-2">UI / UX</h3>
-        <p class="text-gray-300 text-sm">
-          Skilled in designing visually appealing, user-friendly interfaces. I focus on intuitive layouts and engaging digital experiences.
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-gray-800/70 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-        <div class="text-green-400 text-3xl mb-4">🤖</div>
-        <h3 class="text-xl font-semibold mb-2">AI / ML</h3>
-        <p class="text-gray-300 text-sm">
-          Basic understanding of Artificial Intelligence and Machine Learning concepts with hands-on experience in small AI-based projects.
-        </p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="bg-gray-800/70 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-        <div class="text-green-400 text-3xl mb-4">⚙</div>
-        <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
-        <p class="text-gray-300 text-sm">
-          Knowledge of Node.js and Express.js for creating robust APIs and backend logic. I also work with MongoDB for managing databases.
-        </p>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="bg-gray-800/70 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-        <div class="text-green-400 text-3xl mb-4">☁</div>
-        <h3 class="text-xl font-semibold mb-2">Cloud & Hosting</h3>
-        <p class="text-gray-300 text-sm">
-          Basic knowledge of cloud deployment using platforms like Vercel, Netlify, and GitHub Pages for hosting web applications.
-        </p>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="bg-gray-800/70 backdrop-blur-md p-8 rounded-2xl shadow-lg hover:shadow-green-400/30 transition-all">
-        <div class="text-green-400 text-3xl mb-4">🧠</div>
-        <h3 class="text-xl font-semibold mb-2">Problem Solving</h3>
-        <p class="text-gray-300 text-sm">
-          Strong analytical thinking and problem-solving abilities. I enjoy tackling logical challenges and optimizing code for better performance.
-        </p>
+    <!-- Technical Skills with Progress Bars -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        Technical <span class="text-green-400">Proficiency</span>
+      </h3>
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-white font-semibold">HTML & CSS</span>
+            <span class="text-green-400">95%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-3">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-white font-semibold">JavaScript</span>
+            <span class="text-green-400">90%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-3">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-white font-semibold">React</span>
+            <span class="text-green-400">85%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-3">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-white font-semibold">Node.js & Express</span>
+            <span class="text-green-400">80%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-3">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-white font-semibold">MongoDB</span>
+            <span class="text-green-400">75%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-3">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-white font-semibold">Tailwind CSS</span>
+            <span class="text-green-400">92%</span>
+          </div>
+          <div class="w-full bg-gray-700 rounded-full h-3">
+            <div class="bg-gradient-to-r from-green-400 to-green-600 h-3 rounded-full" style="width: 92%"></div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Skill Categories -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        Skill <span class="text-green-400">Categories</span>
+      </h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105">
+          <div class="text-green-400 text-4xl mb-4">💻</div>
+          <h3 class="text-xl font-semibold mb-3">Frontend Development</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Proficient in HTML, CSS, JavaScript, and React. I build clean, responsive, and interactive websites that deliver great user experiences.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">HTML5</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">CSS3</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">JavaScript</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">React</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Tailwind</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105">
+          <div class="text-green-400 text-4xl mb-4">🎨</div>
+          <h3 class="text-xl font-semibold mb-3">UI / UX Design</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Skilled in designing visually appealing, user-friendly interfaces. I focus on intuitive layouts and engaging digital experiences.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Figma</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Adobe XD</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Prototyping</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Wireframing</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">User Research</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105">
+          <div class="text-green-400 text-4xl mb-4">⚙️</div>
+          <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Knowledge of Node.js and Express.js for creating robust APIs and backend logic. I also work with MongoDB for managing databases.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Node.js</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Express</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">MongoDB</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">REST APIs</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">JWT</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105">
+          <div class="text-green-400 text-4xl mb-4">☁️</div>
+          <h3 class="text-xl font-semibold mb-3">Cloud & Hosting</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Basic knowledge of cloud deployment using platforms like Vercel, Netlify, and GitHub Pages for hosting web applications.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Vercel</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Netlify</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">GitHub Pages</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Git</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">AWS Basics</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105">
+          <div class="text-green-400 text-4xl mb-4">🤖</div>
+          <h3 class="text-xl font-semibold mb-3">AI / ML</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Basic understanding of Artificial Intelligence and Machine Learning concepts with hands-on experience in small AI-based projects.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Python</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">TensorFlow</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">OpenAI API</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">ML Basics</span>
+          </div>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 shadow-lg hover:shadow-green-400/30 hover:border-green-400 transition transform hover:scale-105">
+          <div class="text-green-400 text-4xl mb-4">🧠</div>
+          <h3 class="text-xl font-semibold mb-3">Problem Solving</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            Strong analytical thinking and problem-solving abilities. I enjoy tackling logical challenges and optimizing code for better performance.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Algorithms</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Data Structures</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Debugging</span>
+            <span class="bg-green-400/20 text-green-400 px-3 py-1 rounded-full text-xs">Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        Tools & <span class="text-green-400">Technologies</span>
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-3xl mb-2">📦</div>
+          <p class="text-gray-300 text-sm">npm</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-3xl mb-2">🔧</div>
+          <p class="text-gray-300 text-sm">VS Code</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-3xl mb-2">🐙</div>
+          <p class="text-gray-300 text-sm">GitHub</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-3xl mb-2">🎯</div>
+          <p class="text-gray-300 text-sm">Postman</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-3xl mb-2">📊</div>
+          <p class="text-gray-300 text-sm">MongoDB</p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition text-center">
+          <div class="text-3xl mb-2">⚡</div>
+          <p class="text-gray-300 text-sm">Vite</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-bold mb-8 text-center">
+        <span class="text-green-400">Certifications</span> & Courses
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">📜</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">React - The Complete Guide</h4>
+              <p class="text-gray-300 text-sm mb-2">Udemy Certification</p>
+              <p class="text-gray-400 text-xs">Completed comprehensive React course covering hooks, context, and advanced patterns</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">🎓</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">JavaScript Algorithms & Data Structures</h4>
+              <p class="text-gray-300 text-sm mb-2">FreeCodeCamp</p>
+              <p class="text-gray-400 text-xs">Mastered JavaScript fundamentals and problem-solving techniques</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">💡</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">UI/UX Design Fundamentals</h4>
+              <p class="text-gray-300 text-sm mb-2">Coursera</p>
+              <p class="text-gray-400 text-xs">Learned design principles, user research, and prototyping</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-6 rounded-xl border border-gray-700 hover:border-green-400 transition">
+          <div class="flex items-start gap-4">
+            <div class="text-3xl">☁️</div>
+            <div>
+              <h4 class="text-green-400 font-semibold mb-2">Web Development Bootcamp</h4>
+              <p class="text-gray-300 text-sm mb-2">Online Platform</p>
+              <p class="text-gray-400 text-xs">Full-stack development course covering modern web technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <a href="./projects.html"
+        class="inline-block bg-green-400 text-black px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition transform hover:scale-105 shadow-lg shadow-green-400/30">
+        View My Projects →
+      </a>
+    </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="px-10 md:px-20 py-8 border-t border-gray-700 text-center text-gray-400">
+    <p>&copy; 2024 Zehra. All rights reserved. | Built with HTML & Tailwind CSS</p>
+  </footer>
 
 </body>
 </html>
